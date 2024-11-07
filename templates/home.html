@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attendance System</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-image: url('../static/images/main.webp');
+      background-size: 80rem;
+      background-position: 10rem;
+      /* background-image:url('https://buyfullcode.com/img/products/attendance-management/banner-1-500.jpg'); */
+      background-color: #f8f9fa;
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .btn-box {
+      margin: 10px;
+    }
+
+    .btn-custom {
+      font-size: 31px;
+      padding: 20px 40px;
+      border-radius: 10px;
+    }
+
+    h1 {
+      margin-top: 0; /* Remove default margin for h1 */
+    }
+
+    .login-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+  </style>
+</head>
+<body>
+  
+<div class="container">
+    <h1 style="padding-bottom: 8rem ;font-size: 4rem;color: #f8f9fa;">ATTENDANCE SYSTEM</h1>
+    <a href="{{url_for('login_page')}}" >  <button  class="btn btn-primary login-btn">Faculty Login</button></a>
+    
+    <div class="row">
+        <a href="{{url_for('attendance_taker')}}" >
+            <div class="col-md-4 btn-box">
+                <button class="btn btn-primary btn-custom">Take Attendance</button>
+            </div>
+        </a>
+        <!-- <a href="{{url_for('attendance_viewer')}}"> 
+            <div class="col-md-4 btn-box">
+                <button class="btn btn-success btn-custom">Attendance Viewer</button>
+            </div>
+        </a>
+        <a href="{{url_for('register_the_face')}}">
+            <div class="col-md-4 btn-box">
+                <button class="btn btn-info btn-custom">Register Your Face</button>
+            </div>
+        </a>-->
+    </div>
+</div>
+
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

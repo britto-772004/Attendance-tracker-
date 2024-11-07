@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attendance System</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-image: url('../static/images/main.webp');
+      background-size: 80rem;
+      background-position: 10rem;
+      /* background-image:url('https://buyfullcode.com/img/products/attendance-management/banner-1-500.jpg'); */
+      background-color: #f8f9fa;
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .btn-box {
+      margin: 10px;
+    }
+
+    .btn-custom {
+      font-size: 31px;
+      padding: 20px 40px;
+      border-radius: 10px;
+    }
+
+    h1 {
+      margin-top: 0; /* Remove default margin for h1 */
+    }
+
+    .login-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+<a href="{{url_for('attendance_viewer')}}" target="_blank"> 
+            <div class="col-md-4 btn-box">
+                <button class="btn btn-success btn-custom">Attendance Viewer</button>
+            </div>
+        </a>
+        <a href="{{url_for('register_the_face')}}" target="_blank">
+            <div class="col-md-4 btn-box">
+                <button class="btn btn-info btn-custom">Register Your Face</button>
+            </div>
+        </a>
+    </div>
+    </body>
+    </html>
+    

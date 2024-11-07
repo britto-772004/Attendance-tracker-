@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Login Form</title>
+<style>
+body
+{
+background-image:url("../static/images/login_image.jpeg");
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-size:100%
+}
+h1
+{
+color:white;
+font-size: 66px;
+}
+label
+{
+font-size: 30px;
+}
+
+
+</style>
+</head>
+<body><center>
+<div class="container">
+<div class="card">
+<br><br><br><br><br><br><br<br><br><br>
+<h1><u>FACULTY LOGIN PAGE</u></h1><br>
+<form action="{{url_for('faculty_page')}}"><fieldset style="width:500px;padding: 90px;margin: 10px;">
+<label style="color:white;"><b>USERNAME:</b></label>
+<b><input style="font-size: 20px;"type="text" placeholder="Enter the Username"></b><br><br>
+<label style="color:white;"><b>PASSWORD:</b></label>
+<b><input style="font-size: 20px;" type="password" placeholder="Enter the Password"></b><br>
+<br>
+<b><input style="font-size: 20px;" type="submit" value="submit"></b></fieldset>
+</form>
+</div>
+</div></center>
+</body>
+</html>
